@@ -1,0 +1,122 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #020617;
+}
+
+/* LOGIN CARD */
+.form {
+  width: 380px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* LOGO */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+
+/* TEXT */
+.form h1 {
+  font-size: 22px;
+  text-align: center;
+  color: #f8fafc;
+}
+
+.form p {
+  font-size: 13px;
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 14px;
+}
+
+/* INPUTS */
+.form input {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.form input::placeholder {
+  color: #64748b;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+/* PASSWORD */
+.passwordWrap {
+  position: relative;
+}
+
+.passwordWrap input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #94a3b8;
+}
+
+/* BUTTON */
+.form button {
+  margin-top: 12px;
+  background: var(--color-primary);
+  color: #020617;
+  font-weight: 600;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ERROR */
+.error {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0 24px;
+}
+
+.logo img {
+  max-width: 140px;
+  height: auto;
+  object-fit: contain;
+}

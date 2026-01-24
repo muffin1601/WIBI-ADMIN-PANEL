@@ -1,0 +1,76 @@
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #020617, #020617);
+  border-right: 1px solid #1f2937;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding: 12px 0 28px;
+}
+
+.logo img {
+  max-width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
+.section {
+  margin: 26px 0 10px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: #7b8794;
+  text-transform: uppercase;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  color: #cbd5e1;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.link svg {
+  color: #9aa4b2;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  background: rgba(56, 189, 248, 0.1);
+  color: #e5e7eb;
+}
+
+.link:hover svg {
+  color: #38bdf8;
+}
+
+.active {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  font-family: "Manrope", sans-serif;
+  padding: 11px 14px;
+  border-radius: 12px;
+  justify-content: flex-start;
+  background: linear-gradient(
+    90deg,
+    rgba(56, 189, 248, 0.22),
+    rgba(56, 189, 248, 0.08)
+  );
+  color: #f8fafc;
+  box-shadow: inset 3px 0 0 #207194;
+}
+
+.active svg {
+  color: #4ac6ff;
+}
