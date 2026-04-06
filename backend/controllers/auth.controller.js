@@ -13,13 +13,19 @@ export const login = async (req, res) => {
 
     // Find user
     const user = await Profile.findOne({ username, is_active: true });
+    console.log("LOGIN ATTEMPT:", { username, userFound: !!user });
+
     if (!user) {
+      console.log("LOGIN FAILED: User not found or inactive");
       return res.status(401).json({ message: "Invalid credentials" });
     }
 
     //  Check password
     const isMatch = await bcrypt.compare(password, user.password);
+    console.log("PASSWORD MATCH:", isMatch);
+
     if (!isMatch) {
+      console.log("LOGIN FAILED: Password mismatch");
       return res.status(401).json({ message: "Invalid credentials" });
     }
 
